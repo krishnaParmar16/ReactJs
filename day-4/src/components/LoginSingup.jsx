@@ -99,6 +99,8 @@ function LoginSingup()
                         icon: "success",
                         draggable: true
                       });
+                      setLoginEmail("")
+                      setLoginPass("")
                 }
                 else{
                     Swal.fire({
@@ -116,8 +118,7 @@ function LoginSingup()
               });
            }
             
-           setLoginEmail("")
-      setLoginPass("")
+        
         }
     console.log(a);
 
