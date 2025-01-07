@@ -34,31 +34,38 @@ function Form() {
 
     <>
   
-    <button className='form h-[40px] w-[120px] border ml-[40%]  mb-[50px] mt-[20px]' onClick={()=>{
+   <nav className='h-[80px] w-100% border flex justify-between items-center shadow-lg'>
+    <div className="n1 h-[100%] w-[15%]  flex justify-center items-center">
+    <h1 className='text-[24px] font-bold'>Logo</h1>
+    </div>
+   <div className="n2">
+   <button className='form h-[40px] w-[120px]   ' onClick={()=>{
         setState(true)
     }}>Form</button>
 
-    <button className='product h-[40px] w-[120px] border ml-[10px] mb-[50px] mt-[20px]' onClick={()=>{
+    <button className='product h-[40px] w-[120px] ml-[10px]  mr-[20px]' onClick={()=>{
         setState(false)
     }}>Product</button>
+   </div>
+   </nav>
 
     {
         state==true?
-    <div className='shadow-lg border h-[350px] w-[35%] flex flex-col m-auto items-center'>
-        <h1 className='m-auto '>Enter Product Detail</h1>
-        <input type="text" name="" id=""  className='h-[40px] w-[90%] border-b mt-[10px] pl-[10px]  text-[black]' placeholder='Img URL' value={img} onChange={(e)=>{
+    <div className='shadow-lg border h-[390px] w-[35%] flex flex-col m-auto items-center mt-[50px]'>
+        <h1 className='mt-[22px] text-[22px]'>Enter Product Detail</h1>
+        <input type="text" name="" id=""  className='h-[40px] w-[80%] mt-[15px] pl-[10px]  text-[black]' placeholder='Img URL' value={img} onChange={(e)=>{
             setImg(e.target.value);
         }}/>
-        <input type="text" name="" id="" className='h-[40px] w-[90%] border-b mt-[10px] pl-[10px]  text-[black]' placeholder='Title' value={title}   onChange={(e)=>{
+        <input type="text" name="" id="" className='h-[40px] w-[80%] mt-[10px] pl-[10px]  text-[black]' placeholder='Title' value={title}   onChange={(e)=>{
             setTitle(e.target.value);
         }} />
-        <input type="text" name="" id="" className='h-[40px] w-[90%] border-b mt-[10px] pl-[10px]  text-[black]' placeholder='Price'  value={price} onChange={(e)=>{
+        <input type="text" name="" id="" className='h-[40px] w-[80%] mt-[10px] pl-[10px]  text-[black]' placeholder='Price'  value={price} onChange={(e)=>{
             setPrice(e.target.value);
         }} />
-        <input type="text" name="" id="" className='h-[40px] w-[90%] border-b mt-[10px] pl-[10px]  text-[black]' placeholder='Description' value={des}  onChange={(e)=>{
+        <input type="text" name="" id="" className='h-[40px] w-[80%] mt-[10px] pl-[10px]  text-[black]' placeholder='Description' value={des}  onChange={(e)=>{
             setDes(e.target.value);
         }}  />
-        <button onClick={showProduct} className='h-[45px] w-[90%] border rounded-[20px] mt-[30px] mb-[20px]'>Submit</button>
+        <button onClick={showProduct} className='btn1 h-[45px] w-[80%]  mt-[30px] mb-[20px]'>Submit</button>
     </div>
     :
 
@@ -66,11 +73,12 @@ function Form() {
 
         {arr.map((el)=>{
             return <>
-           <div className='h-[300px] border w-[20%] shadow-lg mt-[20px] ms-3'>
+           <div className='h-[380px] border w-[22%] shadow-lg mt-[20px] ms-3'>
            <img src={el.img} alt="image" className='h-[60%] w-[100%]' />
-            <h2 className='font-bold text-[22px] ml-[10px] mt-[10px]'>{el.title}</h2>
-            <p className='text-[16px] font-normal ml-[10px]'>₹{el.price}</p>
-            <p className='text-normal ml-[10px]'>{el.des}</p>
+            <h2 className='font-bold text-[22px] text-center mt-[10px]'>{el.title}</h2>
+            <p className='text-[16px] font-normal text-center'>₹{el.price}</p>
+            <p className='text-normal text-center'>{el.des}</p>
+            <button className='add h-[40px] w-[40%] mt-[10px] ml-[30%] '>Add to cart</button>
            </div>
             </>
         })}

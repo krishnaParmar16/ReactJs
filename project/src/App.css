@@ -5,3 +5,40 @@
     outline: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+input{
+    border-bottom: 1px solid black;
+}
+input::placeholder{
+    color: rgb(48, 48, 48);
+}
+.btn1{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: 1s;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.form,.product,.add{
+   border:1px solid black ;
+   transition: 1s;
+}
+.form:hover,.product:hover,.add:hover{
+    cursor:pointer;
+    background-color: black;
+    color: white;
+}
+.add{
+    border:1px solid black ;
+    background-color: black;
+    color: white;
+    transition: 1s;
+ }
+ .add:hover{
+    cursor:pointer;
+    background-color: transparent;
+    color: black;
+}
