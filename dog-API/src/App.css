@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  background-color: #f0f0d7a7;
+}
+img{
+  box-shadow: 1px 3px 10px 1px gray;
+}
+button{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+button:hover{
+
+    box-shadow: 1px 1px 10px 1px gainsboro;
+}
