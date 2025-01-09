@@ -1,4 +1,8 @@
 import "./component.css"
+import shop1 from "./images/shop1.png"
+import shop2 from "./images/shop2.png"
+import shop3 from "./images/shop3.png"
+import shop4 from "./images/shop4.png"
 
 function Sec3()
 {
@@ -17,49 +21,57 @@ function Sec3()
                     </div>
                     <hr className="h-[10px] w-[100%] bg-[F6F6F7] absolute bottom-[0%]"/>
                 </div>
-                <div className="sec3-2 h-[70%] w-[98%] ml-[1%] border flex justify-between">
-                <div className="s3 h-[90%] w-[23%] rounded-[8px] border ">
-                    <div className="img2 h-[65%] w-[100%] border"></div>
-                    <div className="txt2 h-[35%] w-[100%] border">
-                        <p className="text-sm text-[#74787C] uppercase">levi's cotton</p>
-                        <h2 className="font-semibold text-[22px]">sbdsba,</h2>
-                        <p className="text-[#74787C]">
-                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[10px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
+                <div className="sec3-2 h-[70%] w-[98%] ml-[1%] flex justify-between">
+                <div className="s3 h-[90%] w-[23%] rounded-[8px] border cursor-pointer">
+                    <div className="img2 h-[65%] w-[100%] ">
+                        <img src={shop1} alt="" className="h-[100%]" />
+                    </div>
+                    <div className="txt2 h-[35%] w-[100%] ">
+                        <p className="text-sm text-[#74787C] ml-[20px] mt-[8px] uppercase">levi's cotton</p>
+                        <h2 className="font-semibold ml-[20px] w-[80%] text-[22px]">Monica Diara Party Dress</h2>
+                        <p className="mt-[5px] text-[#74787C]">
+                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[20px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
                          </span>  (15 Reviews)</p>
-                         <p></p>
+                         <p className="mt-[5px] ml-[20px] text-[#74787C] font-semibold"><del>$250.00</del> <span className="text-[#E53E3E]">$157.00</span> </p>
                     </div>
                 </div>
-                <div className="s3 h-[90%] w-[23%] rounded-[8px] border ">
-                    <div className="img2 h-[65%] w-[100%] border"></div>
-                    <div className="txt2 h-[35%] w-[100%] border">
-                        <p className="text-sm text-[#74787C] uppercase">levi's cotton</p>
-                        <h2 className="font-semibold text-[22px]">sbdsba,</h2>
-                        <p className="text-[#74787C]">
-                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[10px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
+                <div className="s3 h-[90%] w-[23%] rounded-[8px] border cursor-pointer">
+                    <div className="img2 h-[65%] w-[100%] ">
+                    <img src={shop2} alt="" className="h-[100%]" />
+                    </div>
+                    <div className="txt2 h-[35%] w-[100%] ">
+                        <p className="text-sm text-[#74787C] ml-[20px] mt-[8px] uppercase">levi's cotton</p>
+                        <h2 className="font-semibold ml-[20px] w-[80%] text-[22px]">Onima Black Flower Sandal</h2>
+                        <p className="mt-[5px] text-[#74787C]">
+                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[20px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
                          </span>  (15 Reviews)</p>
-                         <p></p>
+                         <p className="mt-[5px] ml-[20px] text-[#74787C] font-semibold"><del>$450.00</del> <span className="text-[#E53E3E]">$257.00</span> </p>
                     </div>
                 </div>
-                <div className="s3 h-[90%] w-[23%] rounded-[8px] border ">
-                    <div className="img2 h-[65%] w-[100%] border"></div>
-                    <div className="txt2 h-[35%] w-[100%] border">
-                        <p className="text-sm text-[#74787C] uppercase">levi's cotton</p>
-                        <h2 className="font-semibold text-[22px]">sbdsba,</h2>
-                        <p className="text-[#74787C]">
-                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[10px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
+                <div className="s3 h-[90%] w-[23%] rounded-[8px] border cursor-pointer">
+                    <div className="img2 h-[65%] w-[100%] ">
+                    <img src={shop3} alt="" className="h-[100%]" />
+                    </div>
+                    <div className="txt2 h-[35%] w-[100%] ">
+                        <p className="text-sm text-[#74787C] ml-[20px] mt-[8px] uppercase">levi's cotton</p>
+                        <h2 className="font-semibold ml-[20px] w-[80%] text-[22px]">Poncho Sweater International</h2>
+                        <p className="mt-[5px] text-[#74787C]">
+                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[20px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
                          </span>  (15 Reviews)</p>
-                         <p></p>
+                         <p className="mt-[5px] ml-[20px] text-[#74787C] font-semibold"><del>$550.00</del> <span className="text-[#E53E3E]">$427.00</span> </p>
                     </div>
                 </div>
-                <div className="s3 h-[90%] w-[23%] rounded-[8px] border ">
-                    <div className="img2 h-[65%] w-[100%] border"></div>
-                    <div className="txt2 h-[35%] w-[100%] border">
-                        <p className="text-sm text-[#74787C] uppercase">levi's cotton</p>
-                        <h2 className="font-semibold text-[22px]">sbdsba,</h2>
-                        <p className="text-[#74787C]">
-                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[10px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
+                <div className="s3 h-[90%] w-[23%] rounded-[8px] border cursor-pointer">
+                    <div className="img2 h-[65%] w-[100%] ">
+                    <img src={shop4} alt="" className="h-[100%]" />
+                    </div>
+                    <div className="txt2 h-[35%] w-[100%] ">
+                        <p className="text-sm text-[#74787C] ml-[20px] mt-[8px] uppercase">levi's cotton</p>
+                        <h2 className="font-semibold ml-[20px] w-[80%] text-[22px]">D'valo Office Cotton Suite</h2>
+                        <p className="mt-[5px] text-[#74787C]">
+                         <span className="me-[10px]"><i class="fa-solid fa-star text-[#E53E3E] ml-[20px]"></i><i class="fa-solid fa-star ml-[3px] text-[#E53E3E]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i><i class="fa-solid fa-star text-[#E53E3E] ml-[3px]"></i>
                          </span>  (15 Reviews)</p>
-                         <p></p>
+                         <p className="mt-[5px] ml-[20px] text-[#74787C] font-semibold"><del>$350.00</del> <span className="text-[#E53E3E]">$257.00</span> </p>
                     </div>
                 </div>
                 </div>
