@@ -106,19 +106,17 @@ const handleSubmit = (e) => {
   }
   else{
     setArr([...arr, state])
- 
     Swal.fire({
       icon: "success",
       title: "",
       text: "Data Added Successfully",
   })
-  
-  setState({
-    ...state, img: "",
-    title: "",
-    price: "",
-})
-
+  // setState({
+  //   ...state,
+  //   img:"",
+  //   title:"",
+  //   price:""
+  // })
   }
 
 
