@@ -5,3 +5,19 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     outline: 0;
 }
+input{
+    height: 45px;
+    width: 80%;
+    padding-left: 8px;
+    /* border-bottom: 1px solid gainsboro; */
+    margin-top: 10px;
+}
+#img{
+    margin-top: 30px;
+}
+#btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}

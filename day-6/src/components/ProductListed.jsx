@@ -3,12 +3,12 @@ import React from 'react'
 
 function ProductListed(props) {
   return (
-    <div>
+    <div className="ml-[25%] mt-[20px]">
         <thead>
         <tr >
-            <td className='h-[50px] w-[250px] border text-center'>Image</td>
-            <td className='h-[50px] w-[180px] border text-center'>Title</td>
-            <td className='h-[50px] w-[200px] border text-center'>Price</td>
+            <td className='h-[50px] w-[250px] border text-center text-[18px] font-semibold'>Image</td>
+            <td className='h-[50px] w-[180px] border text-center text-[18px] font-semibold'>Title</td>
+            <td className='h-[50px] w-[200px] border text-center text-[18px] font-semibold'>Price</td>
         </tr>
         </thead>
         <tbody>
