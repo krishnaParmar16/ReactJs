@@ -129,11 +129,11 @@ function Form() {
 
         {state.skill.map((el, index) => {
           return (
-            <div className="flex mb-[0px] w-[70%]">
+            <div className="flex mb-[0px] w-[70%]" key={index}>
               <input
                 type="text"
                 className="w-[75%]"
-                value={state.skill}
+                value={el}
                 name={index}
                 id=""
                 placeholder="Enter your skill"
@@ -169,11 +169,11 @@ function Form() {
         {
         state.hobby.map((el, index) => {
           return (
-            <div className="flex mb-[0px] w-[70%]">
+            <div className="flex mb-[0px] w-[70%]" key={index}>
               <input
                 type="text"
                 className="w-[75%]"
-                value={state.hobby}
+                value={el}
                 name={index}
                 id=""
                 placeholder="Enter your hobby"
