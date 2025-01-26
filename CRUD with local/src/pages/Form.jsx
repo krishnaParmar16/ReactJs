@@ -21,6 +21,7 @@ function Form() {
   const handleSubmit=(e)=>{
     e.preventDefault();
     setArr([...arr,state])
+    alert("Data Added Successfully")
     setState({
       img:"",
       title:"",
