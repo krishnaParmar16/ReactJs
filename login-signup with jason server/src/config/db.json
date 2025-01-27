@@ -1,0 +1,23 @@
+{
+  "user": [
+    {
+      "id": "d739",
+      "username": "Krishna",
+      "email": "k@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "d4df",
+      "username": "manu",
+      "email": "m@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "b205",
+      "username": "Krishna",
+      "email": "kp@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "men": []
+}
