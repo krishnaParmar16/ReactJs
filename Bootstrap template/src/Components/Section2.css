@@ -1,0 +1,176 @@
+.sec2{
+    height: 550px;
+    width: 100%;
+}
+.txt{
+    height: 15%;
+    width: 96%;
+    margin-left: 2%;
+    /* border: 1px solid black; */
+}
+.btn3{
+    height: 40px;
+    border-radius: 20px;
+    width: 110px;
+    border: 1px solid black;
+    background-color: white;
+    transition: 1s;
+    font-size: 14px;
+}
+.btn3:hover{
+    background-color: black;
+    color: rgb(252, 197, 78);
+}
+.product{
+    height: 85%;
+    width: 96%;
+    margin-left: 2%;
+    /* border: 1px solid black; */
+}
+.product div{
+    width: 23%;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+}
+.product div .img{
+    height: 85%;
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+.product .p1 .img{
+    background-image: url(../assets/p1.jpg);
+    background-size: cover;
+    background-position: center ;
+    transition: 1s;
+}
+.product .p1 .img:hover{
+    background-image: url(../assets/p2.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.product .p2 .img{
+    background-image: url(../assets/p3.jpg);
+    background-size: cover;
+    background-position: center ;
+    transition: 1s;
+}
+.product .p2 .img:hover{
+    background-image: url(../assets/p4.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.product .p3 .img{
+    background-image: url(../assets/p5.jpg);
+    background-size: cover;
+    background-position: center ;
+    transition: 1s;
+}
+.product .p3 .img:hover{
+    background-image: url(../assets/p6.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.product .p4 .img{
+    background-image: url(../assets/p7.jpg);
+    background-size: cover;
+    background-position: center ;
+    transition: 1s;
+}
+.product .p4 .img:hover{
+    background-image: url(../assets/p8.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.product div .txt1{
+    height: 15%;
+    width: 100%;
+    border: 1px solid transparent;
+}
+.product div .txt1 h6{
+    font-size: 15px;
+}
+.product div .txt1 p{
+    font-size: 15px;
+    margin-top: -3px;
+    color: gray;
+}
+.product .p1:hover{
+    box-shadow: 1px 1px 10px 1px gainsboro;
+}
+.product .p2:hover{
+    box-shadow: 1px 1px 10px 1px gainsboro;
+}.product .p3:hover{
+    box-shadow: 1px 1px 10px 1px gainsboro;
+}.product .p4:hover{
+    box-shadow: 1px 1px 10px 1px gainsboro;
+}
+
+
+/* section4 */
+
+.product .p5{
+    width: 32%;
+    /* border: 1px solid black; */
+    height: 95%;
+    border-radius: 0px;
+    background-image: url(../assets/p9.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+}
+.product .p5:hover{
+    margin-bottom: 20px;
+}
+
+.product .p6{
+    width: 32%;
+    /* border: 1px solid black; */
+    height: 95%;
+    border-radius: 0px;
+    background-image: url(../assets/p10.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+}
+.product .p6:hover{
+margin-bottom: 20px;
+}
+.product .p7{
+    width: 32%;
+    /* border: 1px solid black; */
+    height: 95%;
+    border-radius: 0px;
+    background-image: url(../assets/p11.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+}
+.product .p7:hover{
+margin-bottom: 20px;
+}
+.btn4{
+    bottom: -30px;
+    left: 20px;
+    height: 35px;
+    background-color: transparent;
+    width: 48%;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: 1s;
+}
+.btn4:hover{
+    background-color: black;
+    color: #FCC54E;
+}
