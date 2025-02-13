@@ -30,7 +30,14 @@ function MovieForm() {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-      
+        
+        if(!state.img || !state.title || !state.des)
+        {
+            alert("Please enter all fields")
+            return;
+        }
+
+
        let data2;
         if(id)
         {   
@@ -85,7 +92,7 @@ function MovieForm() {
                 <input type="text" name="img" value={state.img} placeholder='Image URL' className='h-[40px] pl-[10px] w-[85%] ml-[7.5%] border  border-[#EBEBEB] mt-[5%]' onChange={handleChange} id="" />
                 <input type="text" name="title" value={state.title} placeholder='Title' className='h-[40px] pl-[10px] w-[85%] ml-[7.5%] border border-[#EBEBEB]  mt-[20px]' onChange={handleChange} id="" />
                 <input type="text" name="des" value={state.des} placeholder='Description' className='h-[40px] pl-[10px] w-[85%] ml-[7.5%] border  border-[#EBEBEB] mt-[20px]' onChange={handleChange} id="" />
-                <input type="submit" name="" value={id?"Update":"Submit"} className='h-[45px] w-[85%] ml-[7.5%] hover:shadow-sm cursor-pointer rounded-[5px] bg-[#F84464] text-[white]  border mt-[25px]' id="" />
+                <input type="submit" name="" value={id?"Update":"Submit"} className='h-[45px] w-[85%] ml-[7.5%] hover:shadow-sm cursor-pointer rounded-[5px] bg-[#F84464] text-[white]  border mt-[25px] ' id="" />
             </form>
         </div>
     </div>
