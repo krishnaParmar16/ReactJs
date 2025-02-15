@@ -1,9 +1,7 @@
-import React from 'react'
-import { data } from 'react-router';
+import React, { useState } from 'react'
 import ii1 from "../assets/ii1.png"
 
 function Sec1_Movie() {
-
     const data=[
         {
             id: 1,
@@ -168,8 +166,21 @@ function Sec1_Movie() {
         
         
     ]
+    // console.log(data);
 
-    console.log(data);
+    const [search,setSearch]=useState("");
+    const [searchData,setSearchData]=useState(data)
+
+
+    const handleSearch  = ()=>{   
+        const sData=data.filter((el)=>
+            el.title.toLowerCase().includes(search.toLowerCase())
+        )
+        setSearchData(sData)
+    }
+
+    console.log(searchData);
+    
 
 
   return (
@@ -181,8 +192,8 @@ function Sec1_Movie() {
             <div className="f2 h-[auto] w-[73%] ml-[2%] border-1">
                 <div className="head h-[100px] w-[100%] border-1 flex relative items-center">
                 <i className="fa-solid fa-magnifying-glass absolute left-[2.5%] top-[44%] text-[gray] text-[13px]"></i>
-                <input type="text" className='w-[50%] ml-[1%]  ps-[35px] h-[35px] border-b' placeholder='Search for Movies...' name="" id="" />
-                <button className='h-[36%] w-[70px] border  cursor-pointer rounded-[3px]  absolute left-[43%]'>Search</button>
+                <input type="text" className='w-[50%] ml-[1%]  ps-[35px] h-[35px] border'  onChange={(e)=>setSearch(e.target.value)} placeholder='Search for Movies...' name="" id="" />
+                <button className='btn1 h-[36%] w-[70px]  cursor-pointer rounded-[3px]  absolute left-[43%]' onClick={handleSearch}>Search</button>
                 <select name="" id="" className='border-1 h-[35px] w-[18%] cursor-pointer absolute right-[1%]  ' >
                     <option value="low">Low to High</option>
                     <option value="high">High to Low</option>
@@ -193,7 +204,8 @@ function Sec1_Movie() {
                 </div>
                 <div className="sec grid grid-cols-4 gap-3">
                     {
-                    data.map((el,i)=>{
+                        searchData.length > 0 ?
+                     searchData.map((el,i)=>{
                         return <>
                            <div className='h-[450px]  mt-[10%] mb-[20px] shadow-sm hover:cursor-pointer' key={i}>
                     <div className="img h-[75%] w-[100%]  rounded-[8px]">
@@ -206,7 +218,10 @@ function Sec1_Movie() {
                     </div>
                 </div>
                         </> 
-                    })
+                    }):
+                    (
+                        <p>No movies found</p>
+                    )
                     }
                 </div>
             </div>
