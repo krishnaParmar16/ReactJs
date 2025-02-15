@@ -27,9 +27,9 @@ function MovieShow() {
     <div className='h-auto w-[95%] ml-[2.5%]  grid grid-cols-5 gap-4' >
         {
             state? 
-            state.map((el)=>{
+            state.map((el,i)=>{
                 return <>
-                <div className='h-[450px]  mt-[10%] mb-[20px]' key={el.id}>
+                <div className='h-[450px]  mt-[10%] mb-[20px]' key={i}>
                     <div className="img h-[80%] w-[100%]  rounded-[8px]">
                         <img src={el.img} alt="Image" className='h-[100%] w-[100%] rounded-[8px]' />
                     </div>

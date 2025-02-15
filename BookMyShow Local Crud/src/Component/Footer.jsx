@@ -21,7 +21,7 @@ function Footer() {
                         <span className='text-[10px]'>RESEND BOOKING CONFIRMATION</span>
                     </div>
                     <div className='h-full w-[15%] flex flex-col justify-evenly items-center'>
-                        <i class="fa-solid fa-envelope-open-text text-4xl"></i>
+                        <i className="fa-solid fa-envelope-open-text text-4xl"></i>
                         <span className='text-[10px]'>SUBSCRIBE TO THE NEWSLE</span>
                     </div>
                 </div>
@@ -52,12 +52,12 @@ function Footer() {
             
 
             <div className='h-[50px] w-[22%] m-auto mt-5 flex justify-evenly align-items-center'>
-                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i class="ri-facebook-fill"></i></button>
-                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i class="fa-brands fa-x-twitter"></i></button>
-                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i class="ri-instagram-line"></i></button>
-                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i class="ri-youtube-fill"></i></button>
-                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i class="ri-pinterest-line"></i></button>
-                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i class="ri-linkedin-fill"></i></button>
+                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i className="ri-facebook-fill"></i></button>
+                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i className="fa-brands fa-x-twitter"></i></button>
+                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i className="ri-instagram-line"></i></button>
+                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i className="ri-youtube-fill"></i></button>
+                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i className="ri-pinterest-line"></i></button>
+                <button className='h-[35px] w-[35px] rounded-full bg-[#5D5D5F] text-[#333338] text-2xl'><i className="ri-linkedin-fill"></i></button>
             </div>
         </div>
     )
