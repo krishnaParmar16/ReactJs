@@ -26,6 +26,9 @@ function Dashboard() {
     }
   }, [uid]);
 
+  console.log(uid);
+  
+
   const fetchUser = async () => {
     const userDoc = await getDoc(doc(db, "Users", uid));
     if (userDoc.exists()) setData(userDoc.data());
@@ -63,13 +66,6 @@ function Dashboard() {
     setRecord(record.filter((el) => el.docId !== id));
   };
 
-  const handleGoogleSignin = async()=>{
-    const result = await signInWithPopup(auth, provider);
-      const user = result.user;
-
-      console.log("User signed in:", user);
-  }
-
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-900 text-white p-6">
       <p className="text-2xl font-bold mb-6">Welcome, {data.username}</p>
@@ -97,13 +93,7 @@ function Dashboard() {
         >
           {editIndex == null ? "Add Task" : "Update Task"}
         </button>
-        <button 
-        onClick={handleGoogleSignin}
-        className="w-full flex items-center justify-center gap-2 bg-white text-gray-600 py-3 rounded-md hover:shadow-xl transition cursor-pointer mt-3"
-      >
-        <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" className="w-5 h-5" />
-        Sign in with Google
-      </button>
+       
       </div>
       <table className="w-full max-w-3xl mt-6 border-collapse border border-gray-700 text-white">
         <thead>

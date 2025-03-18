@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth, db } from '../../firebaseConfig';
+import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import { auth, db, provider } from "../../firebaseConfig";
 import { doc, setDoc } from 'firebase/firestore';
 
 function SignUp() {
@@ -16,6 +16,14 @@ function SignUp() {
       navigate('/dashboard');
     });
   };
+
+  const handleGoogleSignIn = async () =>{
+      await signInWithPopup(auth,provider).then((res)=>{
+        // console.log(res);
+      setDoc(doc(db, 'Users', res.user.uid), { username, email });
+      navigate('/dashboard');
+      })
+  }  
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900 text-white">
@@ -44,6 +52,13 @@ function SignUp() {
           onClick={handleSignUp}>
           Sign Up
         </button>
+        <button 
+        onClick={handleGoogleSignIn}
+        className="w-full flex items-center justify-center gap-2 bg-white text-gray-600 py-3 rounded-md hover:shadow-xl transition cursor-pointer mt-3"
+      >
+        <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" className="w-5 h-5" />
+        Sign in with Google
+      </button>
         <h1 className="mt-4 text-center text-gray-400">
           Already have an account?{' '}
           <Link to="/signin" className="text-blue-400 hover:underline">
