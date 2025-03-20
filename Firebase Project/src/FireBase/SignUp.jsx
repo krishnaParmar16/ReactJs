@@ -19,9 +19,10 @@ function SignUp() {
 
   const handleGoogleSignIn = async () =>{
       await signInWithPopup(auth,provider).then((res)=>{
-        // console.log(res);
-      setDoc(doc(db, 'Users', res.user.uid), { username, email });
-      navigate('/dashboard');
+        console.log(res);
+        setDoc(doc(db,"Users",res.user.uid),{username:res.user.displayName,email:res.user.email})
+      navigate('/dashboard',{replace:true});
+
       })
   }  
 
